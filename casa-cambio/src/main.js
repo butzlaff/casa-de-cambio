@@ -5,7 +5,10 @@ const captDiv = document.getElementById('container');
 const captP = document.getElementById('paragrafo');
 
 const API_EXCHANGE = () => {
-  const moeda = document.getElementById('vasco').value;
+  let moeda = document.getElementById('inputCurrencyName').value;
+  if (moeda.trim() === '') {
+    moeda = 'USD'
+  }
   const EXCHANGE_URL = `https://api.exchangerate.host/latest?base=${moeda}`;
   return fetch(EXCHANGE_URL).then((response) => response.json());
 };

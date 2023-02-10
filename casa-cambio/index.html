@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Martian+Mono&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-
 <body>
-    <img src="/src/Casa de Câmbio.png" alt="">
+    <!-- <img src="/src/Casa de Câmbio.png" alt=""> -->
+    <div id='header'>
+    <h1>Casa de <span id='h1'>Câmbio</span></h1>
+    </div>
     <form action="">
         <p>Digite a moeda:</p>
-        <input type="text" id="vasco">
+        <input type="text" id="inputCurrencyName" placeholder='USD' />
         <button id="btnPesquisar">Pesquisar</button>
     </form>
     <div id="superContainer">
@@ -24,5 +25,4 @@
     </div>
     <script src="./src/main.js" type="module"></script>
 </body>
-
 </html>

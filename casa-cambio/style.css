@@ -4,9 +4,39 @@ body {
   font-style: normal;
 }
 
-h1 {
-  color: white;
+::placeholder {
+  position: absolute;
+  width: 37px;
+  height: 25px;
+  top: 15px;
+  left: 5px;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #898989;
 }
+
+h1 {
+  position: absolute;
+  width: 517px;
+  height: 74px;
+  left: 306px;
+  top: 63px;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 79px;
+  color: #FFFFFF;
+}
+
+h1 > span {
+  color: #95EBA8;
+}
+
+
 p {
   color: white;
   font-size: 16px;
@@ -18,6 +48,10 @@ h3 {
   font-size: 30px;
 }
 
+#header {
+  display: flex;
+}
+
 img {
   position: absolute;
   top: 63px;
@@ -26,7 +60,7 @@ img {
 
 form {
   position: absolute;
-  top: 150px;
+  top: 165px;
   left: 306px;
 }
 
@@ -36,6 +70,12 @@ input {
   height: 48px;
   background: rgba(217, 217, 217, 0.1);
   border-radius: 10px;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
 }
 
 button {
